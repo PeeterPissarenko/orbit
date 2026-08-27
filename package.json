@@ -1,0 +1,33 @@
+{
+  "name": "orbit",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Orbit - an interactive, scientifically-scaled 3D model of the Solar System built with Three.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "textures:fetch": "node scripts/fetch-textures.mjs"
+  },
+  "keywords": [
+    "three.js",
+    "webgl",
+    "solar-system",
+    "simulation",
+    "education"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "dependencies": {
+    "three": "^0.185.1"
+  },
+  "devDependencies": {
+    "eslint": "^10.9.1",
+    "globals": "^17.11.0",
+    "vite": "^8.2.2"
+  }
+}

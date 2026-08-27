@@ -1,0 +1,20 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.vite/
+
+# editors / OS
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
+# local tooling scratch
+.playwright-mcp/
+*.local
+
+# the saved kood task pages this project was built from
+Task*_kood*.html

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <title>Orbit · An interactive Solar System</title>
+    <meta
+      name="description"
+      content="Orbit is an interactive, proportionally scaled 3D model of the Solar System. Build planets, add moons, bend time and explore."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ccircle cx='32' cy='32' r='11' fill='%23ffb64d'/%3E%3Cellipse cx='32' cy='32' rx='27' ry='11' fill='none' stroke='%236ea8ff' stroke-width='3'/%3E%3Ccircle cx='59' cy='32' r='5' fill='%234f8cff'/%3E%3C/svg%3E"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="viewport" aria-label="Three-dimensional Solar System viewport"></canvas>
+      <div id="ui"></div>
+    </div>
+
+    <div id="boot" class="boot" role="status" aria-live="polite">
+      <div class="boot__system" aria-hidden="true">
+        <span class="boot__sun"></span>
+        <span class="boot__orbit boot__orbit--a"><i></i></span>
+        <span class="boot__orbit boot__orbit--b"><i></i></span>
+        <span class="boot__orbit boot__orbit--c"><i></i></span>
+      </div>
+      <p class="boot__title">Orbit</p>
+      <p class="boot__hint" id="boot-hint">Assembling the Solar System…</p>
+      <noscript>
+        <p class="boot__hint">Orbit needs JavaScript (and WebGL) to run.</p>
+      </noscript>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
